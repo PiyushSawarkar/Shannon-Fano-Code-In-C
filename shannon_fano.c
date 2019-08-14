@@ -93,12 +93,51 @@ int main(){
     }
     sort_array(L,n); 
     shanon_fano(L,0,n-1);
+    printf("\nThe Output is:");
     for(int i=0;i<n;i++){
         printf("\n%c %s",L[i].alph,L[i].str);  
     }
     printf("\n"); 
     return 0;
-}//to run the file: $ gcc filename.c -lm
+}
+/*
+to compile the file: $ gcc filename.c -lm
+to Execute it: $ ./a.out
+*/
+/*
+Input Data Set-1
+Enter Number of alphabets: 5
+Freq Alph
+0.22 A
+0.30 B
+0.05 C
+0.15 D
+0.28 E
+
+Output for Input Data Set-1:
+B 00
+E 01
+A 10
+D 110
+C 111
+
+Input Data Set-2
+Enter Number of alphabets: 5
+Prob Alph
+0.8585 A
+0.8122 B
+0.9659 C
+0.9012 D
+0.8235 E
+
+Output for Input Data Set-2:
+B 00
+E 01
+A 10
+D 110
+C 111
+
+*/
 
 
 
